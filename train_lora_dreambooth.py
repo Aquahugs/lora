@@ -278,7 +278,7 @@ def parse_args(input_args=None):
         default=4,
         help="Batch size (per device) for sampling images.",
     )
-    parser.add_argument("--num_train_epochs", type=int, default=1)
+    parser.add_argument("--num_train_epochs", type=int, default=2000)
     parser.add_argument(
         "--max_train_steps",
         type=int,
@@ -311,7 +311,7 @@ def parse_args(input_args=None):
     parser.add_argument(
         "--learning_rate",
         type=float,
-        default=None,
+        default=1e-4,
         help="Initial learning rate (after the potential warmup period) to use.",
     )
     parser.add_argument(
@@ -323,7 +323,7 @@ def parse_args(input_args=None):
     parser.add_argument(
         "--scale_lr",
         action="store_true",
-        default=False,
+        default=True,
         help="Scale the learning rate by the number of GPUs, gradient accumulation steps, and batch size.",
     )
     parser.add_argument(
