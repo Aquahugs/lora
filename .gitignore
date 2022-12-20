@@ -1,5 +1,8 @@
-
+data_*
+output_*
 __pycache__
+*.pyc
+__test*
+*
 output/
 train/
-script
