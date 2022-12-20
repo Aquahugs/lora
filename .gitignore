@@ -1,5 +1,4 @@
-data_*
-output_*
+
 __pycache__
 output/
 train/
