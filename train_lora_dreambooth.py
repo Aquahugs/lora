@@ -278,7 +278,7 @@ def parse_args(input_args=None):
         default=4,
         help="Batch size (per device) for sampling images.",
     )
-    parser.add_argument("--num_train_epochs", type=int, default=2000)
+    parser.add_argument("--num_train_epochs", type=int, default=4000)
     parser.add_argument(
         "--max_train_steps",
         type=int,
